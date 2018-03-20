@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Root>
+    <string_FirstName>Biplab</string_FirstName>
+    <string_LastName>Ray</string_LastName>
+    <child>
+        <string_StreetName>Raghnunath Pur</string_StreetName>
+        <string_PINCODE>700059</string_PINCODE>
+        <string_State>700059</string_State>
+        <string_Country>India</string_Country>
+    </child>
+    <beer>
+        <strong>KF</strong>
+        <premium>magnum</premium>
+        <brewery>beera</brewery>
+    </beer>
+</Root>
