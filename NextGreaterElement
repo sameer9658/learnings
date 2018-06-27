@@ -1,0 +1,42 @@
+package com.datastructure;
+
+public class NextGreaterElement {
+	/* prints element and NGE pair for 
+    all elements of arr[] of size n 
+    
+    a) For any array, rightmost element always has next greater element as -1.
+b) For an array which is sorted in decreasing order, all elements have next greater element as -1.
+c) For the input array [4, 5, 2, 25}, the next greater elements for each element are as follows.
+
+Element       NGE
+   4      -->   5
+   5      -->   25
+   2      -->   25
+   25     -->   -1
+    
+    */
+   static void printNGE(int arr[], int n)
+   {
+       int next, i, j;
+       for (i=0; i<n; i++)
+       {
+           next = -1;
+           for (j = i+1; j<n; j++)
+           {
+               if (arr[i] < arr[j])
+               {
+                   next = arr[j];
+                   break;
+               }
+           }
+           System.out.println(arr[i]+" -- "+next);
+       }
+   }
+     
+   public static void main(String args[])
+   {
+       int arr[]= {11, 13, 21, 3};
+       int n = arr.length;
+       printNGE(arr, n);
+   }
+}
